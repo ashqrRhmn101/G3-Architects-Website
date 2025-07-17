@@ -8,5 +8,33 @@
   font-weight: 400;
   font-style: normal;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li a{
+    text-decoration: none;
+}
 
 /* Shared Styles */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.dark2-color{
+    color: #424242;
+}
+.dark3-color{
+    color: #727272;
+}
+.btn{
+    color: #fff;
+    font-size: ;
+    font-weight: 600;
+    padding: 21px 40px;
+    border-radius: 30px;
+}
+

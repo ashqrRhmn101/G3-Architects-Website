@@ -34,6 +34,9 @@ li, a{
 .dark3-color{
     color: #727272;
 }
+.primary-color{
+    color: #FF900E;;
+}
 .btn-primary{
     background-color: #FF900E;
     color: #ffff;
@@ -54,11 +57,13 @@ li, a{
 
 /* Header navbar style */
 
+header{
+    margin-bottom: 80px;
+    /* padding-bottom: 10px; */
+}
 .navbar, .banner{
     max-width: 1440px;
     margin: 0 auto;
-    /* padding: 20px;
-     */
 }
 .brand{
     font-size: 2.5rem;
@@ -74,8 +79,11 @@ li, a{
 /* Header Banner Style */
 .banner{
     text-align: center;
-    max-width: 860px;
     margin-top: 150px;
+}
+.banner-container{
+    max-width: 860px;
+    margin: 0 auto;
 }
 .banner-title{
     font-size: 4rem;
@@ -83,25 +91,56 @@ li, a{
 }
 .banner-description{
     margin-top: 20px;
+    margin-bottom: 30px;
     font-size: 1.2rem;
-}
-.btn{
-    margin-top: 33px;
 }
 
 /* Banner Image */
-.banner-img img{
-    max-width: 100%;
-    border-radius: 8px;
+.banner-img{
     margin-top: 30px;
 }
+.banner-img img{
+    width: 100%;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+/* features-section style */
+
+.features-section{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.features-section-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.features-section-img img{
+    max-width: 100%;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 0 auto;
+}
+.features-section-list{
+    max-width: 537px;
+    font-size: 2rem;
+}
+.span{
+    font-weight: 500;
+}
+
+.features-section-description{
+    font-size: 1rem;
+    line-height: 26px;
+}
+
 
 
 
 /* Media Queries  */
 /* Mobile Devices */
 @media screen and (max-width: 576px){
-    .navbar, .nav-links{
+    .navbar, .nav-links, .features-section{
         flex-direction: column;
     }
     .nav-links{
@@ -117,5 +156,12 @@ li, a{
     .banner-description{
     font-size: 1rem;
 }
-
+    .features-section-list{
+        padding: 25px;
+        text-align: center;
+    }
+    .features-section-description{
+        text-align: justify;
+    }
 }
+

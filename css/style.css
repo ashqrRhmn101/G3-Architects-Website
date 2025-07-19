@@ -192,6 +192,15 @@ header{
 }
 
 
+/* Footer */
+
+footer{
+    text-align: center;
+    background-color: #FFF4E7;
+    padding: 50px;
+}
+
+
 /* Media Queries  */
 /* Mobile Devices */
 @media screen and (max-width: 576px){

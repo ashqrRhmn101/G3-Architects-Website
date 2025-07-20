@@ -237,14 +237,86 @@ footer{
     margin-top: 50px;
     grid-template-columns: repeat(1, 1fr);
 }
-    .btn{
-    flex-direction: column;
-    margin-top: -20px;
-    margin-left: 80px;
-    border-radius: 100px 40px;
+.main-features-title{
+    font-size: 2.7rem;
 }
+
+.main-features-card{
+    max-height: 100%;
+}
+    .main-features-subtitle{
+        margin-top: -20px;
+        font-size: 1.2rem;
+    }
+    .btn{
+    width: 200px;
+    height: 110px;
+    padding: 20px;
+    display:  flex;
+    flex-direction: column;
+    margin: -28px auto;
+    position: relative;
+    border-radius: 70px 40px;
+}
+    .btn h1{
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
     .main-features-description{
         text-align: center;
     }
 }
 
+/* Media Queries  */
+/* Medium Devices */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+
+     .navbar,
+    .nav-links, 
+    .features-section
+    {
+        flex-direction: column;
+    }
+    .features-section{
+         flex-direction: column-reverse;
+    }
+    .nav-links{
+        margin-top: 20px;
+    }
+    .banner{
+        margin: 50px auto;
+        padding: 10px;
+    }
+    .banner-title{
+    font-size: 2.5rem;
+}
+    .banner-description{
+    font-size: 1rem;
+}
+    .features-section-list{
+        padding: 25px;
+        text-align: center;
+    }
+    .features-section-description{
+        text-align: justify;
+    }
+    .main-features{
+    margin-top: 50px;
+    grid-template-columns: repeat(1, 1fr);
+}
+    .main-features-card{
+    max-height: 100%;
+}
+    .btn{
+    display: flex;
+    flex-direction: column;
+    margin: -28px auto;
+    position: relative;
+    border-radius: 100px 40px;
+}
+    .main-features-description{
+        text-align: center;
+    }
+    
+}
